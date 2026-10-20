@@ -27,7 +27,7 @@ jobs:
 
       - name: Compile QUICKCHAT and tests
         run: |
-          javac -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" Main.java Login.java Message.java Logintest.java MessageTest.java
+          javac -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" Main.java Login.java Message.java logintest.java MessageTest.java
 
       - name: Run Login tests
         run: |

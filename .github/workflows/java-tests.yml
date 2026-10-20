@@ -2,17 +2,14 @@ name: QUICKCHAT Java Tests
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out QUICKCHAT
         uses: actions/checkout@v4
@@ -23,7 +20,7 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Check project files
+      - name: List project files
         run: |
           ls -la
           ls -la lib
@@ -32,7 +29,7 @@ jobs:
         run: |
           javac -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" Main.java login.java Message.java logintest.java MessageTest.java
 
-      - name: Run Login tests
+      - name: Run login tests
         run: |
           java -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore logintest
 

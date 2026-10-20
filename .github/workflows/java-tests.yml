@@ -27,7 +27,7 @@ jobs:
 
       - name: Run Login tests
         run: |
-          java -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore logintest
+          javac -cp ".:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar" Main.java login.java Message.java logintest.java MessageTest.java
 
       - name: Run Message tests
         run: |

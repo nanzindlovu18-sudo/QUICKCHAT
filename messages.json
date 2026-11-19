@@ -1,0 +1,37 @@
+[
+  {
+    "messageID": "1",
+    "sender": "+27838968976",
+    "recipient": "+27834557896",
+    "messageText": "Did you get the cake?",
+    "messageStatus": "Sent"
+  },
+  {
+    "messageID": "2",
+    "sender": "+27838968976",
+    "recipient": "+27838884567",
+    "messageText": "Where are you? You are late! I have asked you to be on time.",
+    "messageStatus": "Stored"
+  },
+  {
+    "messageID": "3",
+    "sender": "+27838968976",
+    "recipient": "+27834484567",
+    "messageText": "Yohoooo, I am at your gate.",
+    "messageStatus": "Disregarded"
+  },
+  {
+    "messageID": "0838884567",
+    "sender": "+27838968976",
+    "recipient": "",
+    "messageText": "It is dinner time!",
+    "messageStatus": "Sent"
+  },
+  {
+    "messageID": "5",
+    "sender": "+27838968976",
+    "recipient": "+27838884567",
+    "messageText": "Ok, I am leaving without you.",
+    "messageStatus": "Stored"
+  }
+]

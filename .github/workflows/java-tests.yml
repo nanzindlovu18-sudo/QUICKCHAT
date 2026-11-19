@@ -10,7 +10,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out QUICKCHAT
         uses: actions/checkout@v4
@@ -20,6 +19,11 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
+
+      - name: List project files
+        run: |
+          ls -la
+          ls -la lib
 
       - name: Compile QUICKCHAT and tests
         run: |
